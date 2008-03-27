@@ -1,8 +1,7 @@
 # DeepCloning
 
 module DeepCloning
-  # :nodoc:
-  def self.included(base)
+  def self.included(base) #:nodoc:
     base.alias_method_chain :clone, :deep_cloning
   end
   
@@ -10,20 +9,20 @@ module DeepCloning
   # if passed the :include option, it will deep clone the given associations
   # if passed the :except option, it won't clone the given attributes
   #
-  # == Usage:
+  # === Usage:
   # 
-  # === Cloning a model without an attribute
+  # ==== Cloning a model without an attribute
   #   pirate.clone :except => :name
   # 
-  # === Cloning a model without multiple attributes
+  # ==== Cloning a model without multiple attributes
   #   pirate.clone :except => [:name, :nick_name]
-  # === Cloning one single association
+  # ==== Cloning one single association
   #   pirate.clone :include => :mateys
   #
-  # === Cloning multiple associations
+  # ==== Cloning multiple associations
   #   pirate.clone :include => [:mateys, :treasures]
   #
-  # === Cloning really deep
+  # ==== Cloning really deep
   #   pirate.clone :include => {:treasures => :gold_pieces}
   # 
   def clone_with_deep_cloning options = {}
@@ -50,11 +49,20 @@ module DeepCloning
     return kopy
   end
   
+  # Clones an association from the source.
+  # === Example
+  #   t = Treasure.new
+  #   t.clone_association(Treasure.find(:first), :gold_pieces)
+  #
   def clone_association source, association, deep_associations = nil
     options = deep_associations ? {:include => deep_associations} : {}
     self.send("#{association}=", source.send(association).collect {|i| i.clone(options) })
   end
   
+  # Sets the attribute default 
+  # === Example
+  #  t = Pirate.find(:first)
+  #  t.set_default_attribute(:nick_name)
   def set_default_attribute attribute
     column = self.class.columns.detect {|c| c.name.to_sym == attribute.to_sym}
     self.write_attribute(attribute, column.default)

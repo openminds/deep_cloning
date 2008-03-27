@@ -464,3 +464,42 @@
   [4;36;1mPirate Load (0.000259)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
   [4;35;1mPirate Load (0.000379)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
   [4;36;1mPirate Create (0.000225)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES(NULL, 'Captain Jack', NULL)[0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000441)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000195)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000194)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000087)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000193)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000174)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mTreasure Load (0.000170)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mGoldPiece Load (0.001670)[0m   [0mSELECT * FROM gold_pieces WHERE (gold_pieces.treasure_id = 651188191) [0m
+  [4;36;1mPirate Create (0.000237)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mTreasure Create (0.000142)[0m   [0mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;36;1mGoldPiece Create (0.000124)[0m   [0;1mINSERT INTO gold_pieces ("treasure_id") VALUES(651188192)[0m
+  [4;35;1mSQL (0.000207)[0m   [0mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954884)) [0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954885)) [0m
+  [4;35;1mPirate Load (0.000208)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000173)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Create (0.000093)[0m   [0mINSERT INTO pirates ("name", "nick_name", "age") VALUES(NULL, 'no nickname', NULL)[0m
+  [4;36;1mPirate Load (0.000187)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000179)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000178)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mTreasure Load (0.000166)[0m   [0mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;36;1mPirate Create (0.000109)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mMatey Create (0.000097)[0m   [0mINSERT INTO mateys ("name", "pirate_id") VALUES('John', 140954885)[0m
+  [4;36;1mTreasure Create (0.000083)[0m   [0;1mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;35;1mPirate Load (0.000213)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000191)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mMatey Load (0.000169)[0m   [0mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;36;1mPirate Create (0.000102)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mMatey Create (0.000089)[0m   [0mINSERT INTO mateys ("name", "pirate_id") VALUES('John', 140954885)[0m
+  [4;36;1mPirate Load (0.000183)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000171)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Create (0.000083)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES(NULL, 'Captain Jack', NULL)[0m

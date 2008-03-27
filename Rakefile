@@ -15,7 +15,7 @@ end
 desc 'Generate documentation for the deep_cloning plugin.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'DeepCloning'
+  rdoc.title    = 'DeepCloning Plugin'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README')
   rdoc.rdoc_files.include('lib/**/*.rb')
