@@ -13,10 +13,10 @@ module DeepCloning
   # == Usage:
   # 
   # === Cloning a model without an attribute
-  #   pirate.clone :exclude => :name
+  #   pirate.clone :except => :name
   # 
   # === Cloning a model without multiple attributes
-  #   pirate.clone :exclude => [:name, :nick_name]
+  #   pirate.clone :except => [:name, :nick_name]
   # === Cloning one single association
   #   pirate.clone :include => :mateys
   #
@@ -50,7 +50,6 @@ module DeepCloning
     return kopy
   end
   
-  # :nodoc:
   def clone_association source, association, deep_associations = nil
     options = deep_associations ? {:include => deep_associations} : {}
     self.send("#{association}=", source.send(association).collect {|i| i.clone(options) })
