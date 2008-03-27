@@ -1,0 +1,466 @@
+# Logfile created on Thu Mar 27 18:41:10 +0100 2008 by /
+  [4;36;1mSQL (0.022357)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.002780)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.002666)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.002465)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.002131)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002420)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.002037)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.003705)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000241)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.004238)[0m   [0mDROP TABLE pirates[0m
+  [4;36;1mSQL (0.002371)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001852)[0m   [0mDROP TABLE mateys[0m
+  [4;36;1mSQL (0.002599)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.004058)[0m   [0mDROP TABLE treasures[0m
+  [4;36;1mSQL (0.002282)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002331)[0m   [0mDROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.003535)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.003460)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.004355)[0m   [0mDROP TABLE pirates[0m
+  [4;36;1mSQL (0.002466)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001910)[0m   [0mDROP TABLE mateys[0m
+  [4;36;1mSQL (0.002933)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.007896)[0m   [0mDROP TABLE treasures[0m
+  [4;36;1mSQL (0.002464)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002345)[0m   [0mDROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.002342)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.002512)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000299)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.072395)[0m   [0mDROP TABLE pirates[0m
+  [4;36;1mSQL (0.013450)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.052002)[0m   [0mDROP TABLE mateys[0m
+  [4;36;1mSQL (0.013758)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.046178)[0m   [0mDROP TABLE treasures[0m
+  [4;36;1mSQL (0.057154)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.018797)[0m   [0mDROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.060554)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.060060)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000261)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.003828)[0m   [0mDROP TABLE pirates[0m
+  [4;36;1mSQL (0.001487)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001764)[0m   [0mDROP TABLE mateys[0m
+  [4;36;1mSQL (0.004607)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.005590)[0m   [0mDROP TABLE treasures[0m
+  [4;36;1mSQL (0.013873)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.006090)[0m   [0mDROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.004310)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.080484)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.004424)[0m   [0mDROP TABLE pirates[0m
+  [4;36;1mSQL (0.001595)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002729)[0m   [0mDROP TABLE mateys[0m
+  [4;36;1mSQL (0.002682)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003753)[0m   [0mDROP TABLE treasures[0m
+  [4;36;1mSQL (0.002275)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003959)[0m   [0mDROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.002431)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.002090)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.004464)[0m   [0mDROP TABLE pirates[0m
+  [4;36;1mSQL (0.002716)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003926)[0m   [0mDROP TABLE mateys[0m
+  [4;36;1mSQL (0.002465)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.003476)[0m   [0mDROP TABLE treasures[0m
+  [4;36;1mSQL (0.003348)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.002599)[0m   [0mDROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.003884)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.004132)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000184)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000170)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000089)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000328)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000188)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000191)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000145)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000078)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000319)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000147)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000087)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000311)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000190)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000189)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000149)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000149)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000198)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000148)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000080)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000296)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000303)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000211)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000129)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000208)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000187)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000228)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000295)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000191)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000188)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000146)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000069)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000087)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000299)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000188)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000255)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000176)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000190)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000076)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.000252)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000349)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT NULL, "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.003704)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000245)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000077)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000202)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000185)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000258)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000190)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000371)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000160)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000070)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000081)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000218)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000227)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000214)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000170)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000237)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000303)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000189)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000147)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000084)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000187)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000180)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000209)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000170)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000237)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000310)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000148)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000085)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000187)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000193)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000174)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000178)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000828)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000156)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000068)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000081)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000205)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000188)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.001724)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000204)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000309)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000174)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000189)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000149)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000081)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000182)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000178)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000173)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000179)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000168)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mPirate Load (0.000179)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000176)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000195)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000144)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000081)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000195)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000181)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000181)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000184)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000174)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mTreasure Load (0.000177)[0m   [0mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;36;1mPirate Load (0.000173)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000178)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000169)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mPirate Load (0.000176)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000177)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000195)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000090)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000192)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000170)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mTreasure Load (0.000170)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mGoldPiece Load (0.000166)[0m   [0mSELECT * FROM gold_pieces WHERE (gold_pieces.treasure_id = 651188191) [0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954884)) [0m
+  [4;35;1mSQL (0.000170)[0m   [0mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = NULL)) [0m
+  [4;36;1mPirate Load (0.000246)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000193)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000209)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000188)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000196)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mTreasure Load (0.000203)[0m   [0mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;36;1mPirate Load (0.000200)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000178)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000188)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mPirate Load (0.000185)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000186)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000233)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000312)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000184)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000150)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000072)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000083)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000209)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000186)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mTreasure Load (0.000167)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mGoldPiece Load (0.000166)[0m   [0mSELECT * FROM gold_pieces WHERE (gold_pieces.treasure_id = 651188191) [0m
+  [4;36;1mPirate Create (0.000096)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mTreasure Create (0.000094)[0m   [0mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;36;1mGoldPiece Create (0.000106)[0m   [0;1mINSERT INTO gold_pieces ("treasure_id") VALUES(651188192)[0m
+  [4;35;1mPirate Load (0.000205)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000182)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000167)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000171)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mMatey Load (0.000166)[0m   [0mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;36;1mTreasure Load (0.000175)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mPirate Load (0.000177)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000177)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mMatey Load (0.000160)[0m   [0mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;36;1mPirate Load (0.000174)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000177)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000320)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000165)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000073)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000086)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000197)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000172)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mTreasure Load (0.000169)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mGoldPiece Load (0.000167)[0m   [0mSELECT * FROM gold_pieces WHERE (gold_pieces.treasure_id = 651188191) [0m
+  [4;36;1mPirate Create (0.000095)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mTreasure Create (0.000100)[0m   [0mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;36;1mGoldPiece Create (0.000108)[0m   [0;1mINSERT INTO gold_pieces ("treasure_id") VALUES(651188192)[0m
+  [4;35;1mSQL (0.000170)[0m   [0mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954884)) [0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954885)) [0m
+  [4;35;1mPirate Load (0.000174)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000178)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000186)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000168)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mMatey Load (0.000174)[0m   [0mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;36;1mTreasure Load (0.000174)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mPirate Load (0.000179)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000178)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mMatey Load (0.000171)[0m   [0mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;36;1mPirate Load (0.000179)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000184)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000307)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000146)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000071)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000079)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000193)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000182)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mTreasure Load (0.000203)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mGoldPiece Load (0.000179)[0m   [0mSELECT * FROM gold_pieces WHERE (gold_pieces.treasure_id = 651188191) [0m
+  [4;36;1mPirate Create (0.000111)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mTreasure Create (0.000098)[0m   [0mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;36;1mGoldPiece Create (0.000099)[0m   [0;1mINSERT INTO gold_pieces ("treasure_id") VALUES(651188192)[0m
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954884)) [0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954885)) [0m
+  [4;35;1mPirate Load (0.000180)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000178)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Create (0.000086)[0m   [0mINSERT INTO pirates ("name", "nick_name", "age") VALUES(NULL, 'no nickname', NULL)[0m
+  [4;36;1mPirate Load (0.000179)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000168)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000173)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mTreasure Load (0.000181)[0m   [0mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;36;1mPirate Create (0.000084)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mMatey Create (0.000089)[0m   [0mINSERT INTO mateys ("name", "pirate_id") VALUES('John', 140954885)[0m
+  [4;36;1mTreasure Create (0.000087)[0m   [0;1mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;35;1mPirate Load (0.000181)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000169)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mMatey Load (0.000172)[0m   [0mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;36;1mPirate Create (0.000085)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mMatey Create (0.000108)[0m   [0mINSERT INTO mateys ("name", "pirate_id") VALUES('John', 140954885)[0m
+  [4;36;1mPirate Load (0.000190)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000179)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Create (0.000085)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES(NULL, 'Captain Jack', NULL)[0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: pirates: DROP TABLE pirates[0m
+  [4;36;1mSQL (0.000323)[0m   [0;1mCREATE TABLE pirates ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "nick_name" varchar(255) DEFAULT 'no nickname', "age" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: mateys: DROP TABLE mateys[0m
+  [4;36;1mSQL (0.000190)[0m   [0;1mCREATE TABLE mateys ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: treasures: DROP TABLE treasures[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mCREATE TABLE treasures ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "found_at" varchar(255) DEFAULT NULL, "pirate_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: no such table: gold_pieces: DROP TABLE gold_pieces[0m
+  [4;36;1mSQL (0.000189)[0m   [0;1mCREATE TABLE gold_pieces ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "treasure_id" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000155)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000094)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000089)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mPirate Load (0.000228)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000219)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mTreasure Load (0.000212)[0m   [0;1mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;35;1mGoldPiece Load (0.000197)[0m   [0mSELECT * FROM gold_pieces WHERE (gold_pieces.treasure_id = 651188191) [0m
+  [4;36;1mPirate Create (0.000113)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mTreasure Create (0.000125)[0m   [0mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;36;1mGoldPiece Create (0.000123)[0m   [0;1mINSERT INTO gold_pieces ("treasure_id") VALUES(651188192)[0m
+  [4;35;1mSQL (0.000211)[0m   [0mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954884)) [0m
+  [4;36;1mSQL (0.000184)[0m   [0;1mSELECT count(*) AS count_all FROM gold_pieces INNER JOIN treasures ON gold_pieces.treasure_id = treasures.id WHERE ((treasures.pirate_id = 140954885)) [0m
+  [4;35;1mPirate Load (0.000217)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000214)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Create (0.000104)[0m   [0mINSERT INTO pirates ("name", "nick_name", "age") VALUES(NULL, 'no nickname', NULL)[0m
+  [4;36;1mPirate Load (0.000217)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000215)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mMatey Load (0.000208)[0m   [0;1mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;35;1mTreasure Load (0.000205)[0m   [0mSELECT * FROM treasures WHERE (treasures.pirate_id = 140954884) [0m
+  [4;36;1mPirate Create (0.000103)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mMatey Create (0.000105)[0m   [0mINSERT INTO mateys ("name", "pirate_id") VALUES('John', 140954885)[0m
+  [4;36;1mTreasure Create (0.000096)[0m   [0;1mINSERT INTO treasures ("pirate_id", "found_at") VALUES(140954885, 'Isla del Muerte')[0m
+  [4;35;1mPirate Load (0.000221)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Load (0.000215)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mMatey Load (0.000205)[0m   [0mSELECT * FROM mateys WHERE (mateys.pirate_id = 140954884) [0m
+  [4;36;1mPirate Create (0.000101)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES('Jack Sparrow', 'Captain Jack', NULL)[0m
+  [4;35;1mMatey Create (0.000094)[0m   [0mINSERT INTO mateys ("name", "pirate_id") VALUES('John', 140954885)[0m
+  [4;36;1mPirate Load (0.000259)[0m   [0;1mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;35;1mPirate Load (0.000379)[0m   [0mSELECT * FROM pirates WHERE (pirates."id" = 140954884) [0m
+  [4;36;1mPirate Create (0.000225)[0m   [0;1mINSERT INTO pirates ("name", "nick_name", "age") VALUES(NULL, 'Captain Jack', NULL)[0m
