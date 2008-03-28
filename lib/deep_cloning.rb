@@ -31,8 +31,7 @@ module DeepCloning
     if options[:except]
       # Object#to_a is deprecated and safe_to_array is a private class methods
       [*options[:except]].each do |attribute|
-        column = kopy.class.columns.detect {|c| c.name.to_sym == attribute.to_sym}
-        kopy.write_attribute(attribute, column.default)
+        kopy.write_attribute(attribute, attributes_from_column_definition[attribute.to_s])
       end
     end
     
