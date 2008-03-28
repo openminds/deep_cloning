@@ -38,7 +38,7 @@ module DeepCloning
     if options[:include]
       [*options[:include]].each do |association, deep_associations|
         opts = deep_associations.blank? ? {} : {:include => deep_associations}
-        self.send("#{association}=", kopy.send(association).collect {|i| i.clone(opts) })
+        kopy.send("#{association}=", self.send(association).collect {|i| i.clone(opts) })
       end
     end
 
