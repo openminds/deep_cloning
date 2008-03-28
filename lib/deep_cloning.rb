@@ -4,7 +4,7 @@ module DeepCloning
   def self.included(base) #:nodoc:
     base.alias_method_chain :clone, :deep_cloning
   end
-  
+
   # clones an ActiveRecord model. 
   # if passed the :include option, it will deep clone the given associations
   # if passed the :except option, it won't clone the given attributes
@@ -27,44 +27,22 @@ module DeepCloning
   # 
   def clone_with_deep_cloning options = {}
     kopy = clone_without_deep_cloning
-    if (exceptions = options[:except])
-      case exceptions
-      when String, Symbol
-        kopy.set_default_attribute exceptions
-      when Array
-        exceptions.each {|e| kopy.set_default_attribute e }
-      end
-    end
-    if (associations = options[:include])
-      case associations
-      when String, Symbol
-        kopy.clone_association(self, associations)
-      when Array
-        associations.each {|a| kopy.clone_association(self, a)}
-      when Hash
-        associations.each { |a, deep_associations| kopy.clone_association(self, a, deep_associations) }
+    
+    if options[:except]
+      # Object#to_a is deprecated and safe_to_array is a private class methods
+      [*options[:except]].each do |attribute|
+        column = kopy.class.columns.detect {|c| c.name.to_sym == attribute.to_sym}
+        kopy.write_attribute(attribute, column.default)
       end
     end
     
+    if options[:include]
+      [*options[:include]].each do |association, deep_associations|
+        opts = deep_associations.blank? ? {} : {:include => deep_associations}
+        self.send("#{association}=", kopy.send(association).collect {|i| i.clone(opts) })
+      end
+    end
+
     return kopy
-  end
-  
-  # Clones an association from the source.
-  # === Example
-  #   t = Treasure.new
-  #   t.clone_association(Treasure.find(:first), :gold_pieces)
-  #
-  def clone_association source, association, deep_associations = nil
-    options = deep_associations ? {:include => deep_associations} : {}
-    self.send("#{association}=", source.send(association).collect {|i| i.clone(options) })
-  end
-  
-  # Sets the attribute default 
-  # === Example
-  #  t = Pirate.find(:first)
-  #  t.set_default_attribute(:nick_name)
-  def set_default_attribute attribute
-    column = self.class.columns.detect {|c| c.name.to_sym == attribute.to_sym}
-    self.write_attribute(attribute, column.default)
   end
 end

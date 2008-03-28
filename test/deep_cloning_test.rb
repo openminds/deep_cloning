@@ -23,7 +23,7 @@ class DeepCloningTest < Test::Unit::TestCase
     assert_equal @jack.age, clone.age
   end
   
-  def test_singe_include_association
+  def test_single_include_association
     clone = @jack.clone(:include => :mateys)
     assert clone.save
     assert_equal @jack.mateys.size, clone.mateys.size
@@ -41,5 +41,13 @@ class DeepCloningTest < Test::Unit::TestCase
     assert clone.save
     assert_equal @jack.treasures.size, clone.treasures.size
     assert_equal @jack.gold_pieces.size, clone.gold_pieces.size
+  end
+  
+  def test_multiple_and_deep_include_association
+    clone = @jack.clone(:include => {:treasures => :gold_pieces, :mateys => {}})
+    assert clone.save
+    assert_equal @jack.treasures.size, clone.treasures.size
+    assert_equal @jack.gold_pieces.size, clone.gold_pieces.size
+    assert_equal @jack.mateys.size, clone.mateys.size
   end
 end
