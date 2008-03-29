@@ -1,0 +1,7 @@
+author: defv
+summary: This plugin gives every ActiveRecord::Base object the possibility to do a deep clone.
+homepage: http://blog.defv.be/2008/3/27/activerecord-deepclone-plugin
+plugin: http://github.com/DefV/deep_cloning/tree/master
+license: MIT
+version: 0.1
+rails_version: 2.0+
