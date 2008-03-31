@@ -29,14 +29,13 @@ module DeepCloning
     kopy = clone_without_deep_cloning
     
     if options[:except]
-      # Object#to_a is deprecated and safe_to_array is a private class methods
-      [*options[:except]].each do |attribute|
+      Array(options[:except]).each do |attribute|
         kopy.write_attribute(attribute, attributes_from_column_definition[attribute.to_s])
       end
     end
     
     if options[:include]
-      [*options[:include]].each do |association, deep_associations|
+      Array(options[:include]).each do |association, deep_associations|
         opts = deep_associations.blank? ? {} : {:include => deep_associations}
         kopy.send("#{association}=", self.send(association).collect {|i| i.clone(opts) })
       end
