@@ -24,6 +24,9 @@ module DeepCloning
   #
   # ==== Cloning really deep
   #   pirate.clone :include => {:treasures => :gold_pieces}
+  #
+  # ==== Cloning really deep with multiple associations
+  #   pirate.clone :include => [:mateys, {:treasures => :gold_pieces}]
   # 
   def clone_with_deep_cloning options = {}
     kopy = clone_without_deep_cloning
@@ -36,6 +39,10 @@ module DeepCloning
     
     if options[:include]
       Array(options[:include]).each do |association, deep_associations|
+        if (association.kind_of? Hash)
+          deep_associations = association[association.keys.first]
+          association = association.keys.first
+        end
         opts = deep_associations.blank? ? {} : {:include => deep_associations}
         kopy.send("#{association}=", self.send(association).collect {|i| i.clone(opts) })
       end

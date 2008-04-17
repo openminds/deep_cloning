@@ -50,4 +50,12 @@ class DeepCloningTest < Test::Unit::TestCase
     assert_equal 1, clone.gold_pieces.size
     assert_equal 1, clone.mateys.size
   end
+  
+  def test_multiple_and_deep_include_association_with_array
+    clone = @jack.clone(:include => [{:treasures => :gold_pieces}, :mateys])
+    assert clone.save
+    assert_equal 1, clone.treasures.size
+    assert_equal 1, clone.gold_pieces.size
+    assert_equal 1, clone.mateys.size
+  end
 end

@@ -23,4 +23,6 @@ Install with:
 === Cloning really deep
    pirate.clone :include => {:treasures => :gold_pieces}
 
+=== Cloning really deep with multiple associations
+   pirate.clone :include => [:mateys, {:treasures => :gold_pieces}]
 Copyright (c) 2008 Jan De Poorter, released under the MIT license
