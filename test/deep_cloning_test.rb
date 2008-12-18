@@ -1,10 +1,11 @@
 require File.dirname(__FILE__) + '/test_helper'
 
 class DeepCloningTest < Test::Unit::TestCase
-  fixtures :pirates, :gold_pieces, :treasures, :mateys
+  fixtures :pirates, :gold_pieces, :treasures, :mateys, :parrots
 
   def setup
     @jack = Pirate.find(pirates(:jack).id)
+    @polly= Parrot.find(parrots(:polly).id)
   end
 
   def test_single_clone_exception
@@ -57,5 +58,11 @@ class DeepCloningTest < Test::Unit::TestCase
     assert_equal 1, clone.treasures.size
     assert_equal 1, clone.gold_pieces.size
     assert_equal 1, clone.mateys.size
+  end
+  
+  def test_with_belongs_to_relation
+    clone = @jack.clone(:include => :parrot)
+    assert clone.save
+    assert_not_equal clone.parrot, @jack.parrot
   end
 end

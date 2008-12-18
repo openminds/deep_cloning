@@ -5,6 +5,11 @@ ActiveRecord::Schema.define(:version => 1) do
     t.column :age, :string
   end
   
+  create_table :parrots, :force => true do |t|
+    t.column :name, :string
+    t.column :pirate_id, :integer
+  end
+  
   create_table :mateys, :force => true do |t|
     t.column :name, :string
     t.column :pirate_id, :integer
