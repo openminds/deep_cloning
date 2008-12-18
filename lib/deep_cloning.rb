@@ -44,7 +44,13 @@ module DeepCloning
           association = association.keys.first
         end
         opts = deep_associations.blank? ? {} : {:include => deep_associations}
-        kopy.send("#{association}=", self.send(association).collect {|i| i.clone(opts) })
+        cloned_object = case self.class.reflect_on_association(association).macro
+                        when :belongs_to, :has_one
+                          self.send(association) && self.send(association).clone(opts)
+                        when :has_many, :has_and_belongs_to_many
+                          self.send(association).collect { |obj| obj.clone(opts) }
+                        end
+        kopy.send("#{association}=", cloned_object)
       end
     end
 
